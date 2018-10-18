@@ -1,23 +1,30 @@
-<html> 
-    <head> 
-        <title>戴基武的个人主页</title> 
-    </head> 
-    <style type="text/css">
-        h1{font-size: 60px;color: rgb(10, 105, 143)}
-        html{background-color: #FA8BFF;background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);}
-        #footer{background-color: rgb(180, 177, 147);clear: both;text-align: center;color: rgb(121, 36, 160); padding:5px;}
-    </style> 
-    <body >
-        <h1 style="text-align:center">戴基武的个人主页</h1>
-        <hr/><hr/>
-    <p>
-            <h2><a href=signal_lab style="text-decoration:none">LAB1 基本信号显示</a>
-    </p>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br>
-    <div class="one"></div>
-    <div id="footer">
-        你已到达该页的底部
-    </div>
-    </body>
-</html>
+# LAB1 基本信号显示
+
+## 目的
+通过编写基本程序，实现信号的显示。
+## 代码
+```
+# -*- coding: UTF-8 -*-
+#coding=utf-8
+
+import matplotlib.pyplot as plt
+import numpy as np 
+# linspace 第一个参数序列起始值, 第二个参数序列结束值,第三个参数为样本数默认50
+x = np.linspace(0, 3 * np.pi, 100)
+y = np.sin(x)
+
+plt.rcParams['font.sans-serif']=['SimHei'] #加上这一句就能在图表中显示中文
+plt.rcParams['axes.unicode_minus']=False #用来正常显示负号
+plt.subplot(1,2,1)
+plt.title(r'$f(x)=sin(x)$') 
+plt.plot(x, y)
+#plt.show()
+
+x1 = [t*0.375*np.pi for t in x]
+y1 = np.sin(x1)
+plt.subplot(1,2,2)
+# plt.title(u"测试2") #注意：在前面加一个u
+plt.title(r'$f(x)=sin(\omega x), \omega = \frac{3}{8} \pi$') 
+plt.plot(x1, y1)
+plt.show()
+```
