@@ -11,7 +11,7 @@
         <h1 style="text-align:center">戴基武的个人主页</h1>
         <hr/><hr/>
     <p>
-            <h2><a href=sin.md style="text-decoration:none">LAB1 基本信号显示</a>
+            <h2><a href=signal_lab style="text-decoration:none">LAB1 基本信号显示</a>
     </p>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br>
