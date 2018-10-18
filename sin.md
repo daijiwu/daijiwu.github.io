@@ -5,7 +5,8 @@
 
 ***
 
-代码：
+代码1：
+```
 # -*- coding: UTF-8 -*-
 #coding=utf-8
 
@@ -29,12 +30,14 @@ plt.subplot(1,2,2)
 plt.title(r'$f(x)=sin(\omega x), \omega = \frac{3}{8} \pi$') 
 plt.plot(x1, y1)
 plt.show()
-图形：
-<img src="sin1.png">
+```
+
+图形1：
+![Alt text](sin1.png)
 
 ***
 
-代码：
+代码2：
 图形：
 
 ***
