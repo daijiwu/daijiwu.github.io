@@ -1,0 +1,4 @@
+cd QScintilla_gpl-2.10\Python
+python configure.py --sip=..\..\sip-4.19.1\sipgen\sip.exe --sip-incdir=..\..\sip-4.19.1\siplib --pyqt-sipdir=..\..\PyQt5_gpl-5.8\sip --pyqt=PyQt5
+nmake release
+nmake install

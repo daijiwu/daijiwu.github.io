@@ -1,0 +1,4 @@
+cd PyQt3D_gpl-5.8
+python configure.py --sip=..\sip-4.19.1\sipgen\sip.exe --sip-incdir=..\sip-4.19.1\siplib
+nmake
+nmake install

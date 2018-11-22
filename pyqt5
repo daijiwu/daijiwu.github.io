@@ -1,0 +1,7 @@
+cd PyQt5_gpl-5.8
+python configure.py --sip=..\sip-4.19.1\sipgen\sip.exe --sip-incdir=..\sip-4.19.1\siplib --disable=QtNfc
+nmake
+nmake install
+
+cd sip-4.19.1
+sudo make install
